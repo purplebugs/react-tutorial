@@ -13,7 +13,8 @@ const img =
 function BookList() {
   return (
     <section className="booklist">
-      <Book />
+      <Book job="developer" />
+      <Book title="random title" number={12} />
     </section>
   );
 }
@@ -24,7 +25,9 @@ const Book = (props) => {
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
-      {console.log(props)}
+      <p>{props.job}</p>
+      <p>{props.title}</p>
+      <p>{props.number}</p>
     </article>
   );
 };
