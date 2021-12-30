@@ -33,8 +33,7 @@ function BookList() {
     </section>
   );
 }
-const Book = (props) => {
-  const { img, author, title } = props;
+const Book = ({ img, author, title }) => {
   return (
     <article className="book">
       <img src={img} alt="" />
