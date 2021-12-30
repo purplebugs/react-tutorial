@@ -3,16 +3,9 @@ import ReactDom from "react-dom";
 
 function Greeting() {
   return (
-    <>
-      <div>
-        <h3>Hello people</h3>
-        <ul>
-          <li>
-            <a href="#">Hello world</a>
-          </li>
-        </ul>
-      </div>
-    </>
+    <div>
+      <h1>Hello world</h1>
+    </div>
   );
 }
 
