@@ -17,12 +17,14 @@ function BookList() {
     </section>
   );
 }
-const Book = () => {
+const Book = (props) => {
+  console.log(props);
   return (
     <article className="book">
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      {console.log(props)}
     </article>
   );
 };
